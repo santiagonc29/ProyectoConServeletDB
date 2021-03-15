@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: antiquewhite;
+
+  background-color: #2d2a31;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23061304' fill-opacity='1'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  font-size: 16px;
+  font-family: "Orbitron", sans-serif;
+}
+
+h2 {
+  color: #bbbbbb;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/*navegacion*/
+
+.nav-main {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px;
+}
+
+.nav-brand {
+  width: 50px;
+}
+
+/*navegacion izquieda*/
+.nav-main ul {
+  display: flex;
+}
+.nav-main ul li {
+  padding: 40px;
+}
+
+.nav-main ul li a {
+  padding: 2px;
+}
+
+/*para colocarle al menu un efecto con una linea  cuando se le pase el cursor*/
+.nav-main ul li a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.nav-main ul.nav-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+/*imagen principal*/
+hr {
+  margin: 10px 0;
+}
+
+.imgpricipal {
+  width: 100%;
+  height: 550px;
+  background: url("../img/carros.jpg") no-repeat center/cover;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: #ffffff;
+  font-size: 15px;
+  border: 1px solid #ffffff;
+  margin: 10px 0;
+}
+
+.btn:hover {
+  opacity: 7;
+}
+
+.imgpricipal h2,
+.imgpricipal p {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+img {
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+
+img:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+}
+/*diseño de noticias*/
+
+.nuevastarjetas {
+  /*para que se orenen hacia un lado*/
+  display: grid;
+  /*esto me va permitir crear columnas*/
+  grid-template-columns: repeat(4, 1fr 1fr 1fr);
+  /* para ceparar cada notica*/
+  gap: 30px;
+  display: flex;
+  /* centra imagenes*/
+  justify-content: center;
+}
+
+.nuevastarjetas img {
+  height: 190px;
+}
+
+footer {
+  margin-top: 30px;
+  height: 150px;
+  width: 100%;
+  background: linear-gradient(180deg, #201f22 0%, rgb(27, 30, 34) 92%);
+  font-size: 10px;
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 80px;
+  gap: 0px 10px;
+  grid-template-areas: ". . .";
+  text-align: center;
+}
+
+.Tlt {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  color: #ffffff;
+}
